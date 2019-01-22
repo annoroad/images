@@ -1,4 +1,5 @@
-FROM alpine:latest
+FROM registry.cn-beijing.aliyuncs.com/annoroad/annogene-base:v0.1
+
 MAINTAINER Zan Yuan <seqyuan@gmail.com>
 ENV LANG=en_US.UTF-8
 

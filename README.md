@@ -98,14 +98,14 @@ samtools-0.1.19
 >dockerfile要按照`Dockerfile_`+`软件名称`+`软件版本`的形式命名，并且放在dockerfiles/context目录下
 
 ### Dockerfile的编写
-1. 基础镜像请使用`alpine`，这对于缩减镜像大小帮助很大
+1. 基础镜像请使用`registry.cn-beijing.aliyuncs.com/annoroad/annogene-base:v0.1`，这个镜像是修改过的alpine，定制了权限控制等，而且基于alpine对缩减镜像大小帮助很大
 2. 要求镜像一定要具有bash普通的命令，主要包括：make、wget、zip、bash（这些一般在`/bin`能找到其链接，所以ENV`/bin`是必要的）
 3. 能够直接使用软件变量（所以ENV软件的安装路径是必要的）
 4. 尽量减少RUN的层数，RUN的层数越多，越不利于镜像的加载
 
 以下是一个编写示例
 ```
-FROM egistry.aliyun.xxx.xxx/annoroad/annogene-base:v0.1
+FROM registry.cn-beijing.aliyuncs.com/annoroad/annogene-base:v0.1
 
 MAINTAINER Zan Yuan <seqyuan@gmail.com>
 ENV LANG=en_US.UTF-8
