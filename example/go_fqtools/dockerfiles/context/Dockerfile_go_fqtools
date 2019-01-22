@@ -1,0 +1,11 @@
+FROM alpine:latest
+MAINTAINER Zan Yuan <seqyuan@gmail.com>
+ENV LANG=en_US.UTF-8
+
+COPY ./go_fqtools /opt/
+WORKDIR /opt
+
+RUN apk add bash make wget bzip2 ca-certificates && \
+	chmod +x go_fqtools
+
+ENV PATH /opt:$PATH:/bin

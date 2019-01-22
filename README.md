@@ -105,7 +105,8 @@ samtools-0.1.19
 
 以下是一个编写示例
 ```
-FROM alpine:latest
+FROM egistry.aliyun.xxx.xxx/annoroad/annogene-base:v0.1
+
 MAINTAINER Zan Yuan <seqyuan@gmail.com>
 ENV LANG=en_US.UTF-8
 

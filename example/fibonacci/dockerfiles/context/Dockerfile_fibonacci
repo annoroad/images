@@ -1,0 +1,11 @@
+FROM egistry.aliyun.xxx.xxx/annoroad/annogene-base:v0.1
+MAINTAINER Zan Yuan <seqyuan@gmail.com>
+ENV LANG=en_US.UTF-8
+
+COPY ./fibonacci /opt/
+WORKDIR /opt
+RUN apk add bash make wget bzip2 ca-certificates && \
+	 chmod +x fibonacci
+
+
+ENV PATH /opt:$PATH:/bin
