@@ -168,4 +168,4 @@ help:
 1. `kubectl get pods --show-all`显示所有投递到k8s的pod，类似于qsat
 2. `kubectl delete pod podname`从k8s删除一个pod
 3. `sudo docker run -it $(dockerHub)/$(imagename):$(TAG) /bin/bash` 用于在docker测试节点，检查image推送前build是否有问题
-
+4. `kubectl describe pod podname`或者`kubectl get pod podname -o yaml`能够得到更多的pod运行日志信息
