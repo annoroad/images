@@ -16,18 +16,15 @@ echo  Still_water_run_deep
 ```
 [templetes]
 pod_name = fibonacci6
-templete_name = fibonacci
-env = idc_physical
 module = xxx
-
+[NodeSelector]
+env = idc_physical
 [requests]
 memory = 1
 cpu = 1
-
 [limits]
 memory = 2
 cpu = 2
-
 [container]
 image = registry.cn-beijing.aliyuncs.com/annoroad/fibonacci:v0.0.2
 args = /home/zanyuan/bin/example/fibonacci_6.sh
