@@ -2,6 +2,7 @@
 * 经BCL数据转化成fastq
 
 # 参数
+```
   -i [ --input-dir ] arg (=<runfolder-dir>/Data/Intensities/BaseCalls/)
   -R [ --runfolder-dir ] arg (=./)                path to runfolder directory
   --intensities-dir arg (=<input-dir>/../)        path to intensities directory
@@ -44,3 +45,4 @@
                                                   last entry applies to all remaining indices.
                                                   Accepted values: 0, 1, 2.
   --no-lane-splitting                             do not split fastq files by lane
+```

@@ -7,7 +7,7 @@
 ```
 Commands:
 
-  add     Build and push an image to registry.cn-beijing.aliyuncs.com/annoroad
+  add     Build and push an image to registry-vpc.cn-hangzhou.aliyuncs.com/annoroad
   list    Images list
   build   rebuild and push all images
   init    init the imagetools
